@@ -11,6 +11,7 @@ import { uploadOnCloudinary } from '../utils/cloudinary.js';
 const registerUser=asyncHandler(async (req,res)=>{
     //get user details from frontend
     //validation
+    //validation checks 
     //check if user already exists (username and email)
     //check for images ,check for avatar 
     //upload them to cloudinary 
@@ -86,6 +87,19 @@ const registerUser=asyncHandler(async (req,res)=>{
             new ApiResponse(200,createdUser,'User registerd successfuly')
         )
     
+})
+
+const loginUser=asyncHandler(async(req,res)=>{
+    // data from request body
+    //username or email
+    //find the user
+    //check for password
+    //access and refresh token
+    //send cookies
+
+    const {email,username,password}=req.body;
+
+
 })
 
 export {registerUser}; 
