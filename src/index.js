@@ -5,7 +5,7 @@ import express from 'express'
 
 
 dotenv.config({
-    path:'./env'
+    path:'./.env'
 }) // added function in package.json in dev script
 
 connectDB()
